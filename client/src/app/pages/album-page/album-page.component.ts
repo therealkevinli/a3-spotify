@@ -12,7 +12,7 @@ import { AlbumData } from '../../data/album-data';
 export class AlbumPageComponent implements OnInit {
 	albumId:string;
 	album:AlbumData;
-	tracks:TrackData;
+	tracks:TrackData[];
 
 
   constructor(private route: ActivatedRoute) { }

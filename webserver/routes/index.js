@@ -98,6 +98,12 @@ router.get('/callback', function(req, res, next) {
 	//TODO: use fetch() to exchange the code for an access token and refresh token.
 	//When the fetch() promise completes, parse the response.
 	//Then, use writeTokenFile() to write the token file. Pass it a callback function for what should occur once the file is written.
+	//Once the token is written, redirect the user back to the Angular client with res.redirect().
+});
+
+/*This function does not need to be edited.*/
+router.get('/', function(req, res, next) {
+	res.send('Go to the <a href="/login">login page</a> to begin the oAuth flow.');
 });
 
 /*This function does not need to be edited.*/
